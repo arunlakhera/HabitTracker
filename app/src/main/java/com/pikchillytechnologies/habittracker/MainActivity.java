@@ -20,12 +20,11 @@ public class MainActivity extends AppCompatActivity {
         habitDbHelper.insertHabit("28/09/2018", Contract.HabitEntry.HABIT_CODING, "Android with Firebase");
         habitDbHelper.insertHabit("01/10/2018", Contract.HabitEntry.HABIT_WALK, "Morning Walk 2 km");
         habitDbHelper.insertHabit("02/10/2018", Contract.HabitEntry.HABIT_GYM, "Exercise for 2 hours");
-        
+
         Cursor cursor = habitDbHelper.readHabits();
         while (cursor.moveToNext()) {
             Log.v(TAG, "habit: " + cursor.getString(0) + " " + cursor.getString(1) +
                     " " + cursor.getString(2) + " " + cursor.getString(3));
         }
-
     }
 }
