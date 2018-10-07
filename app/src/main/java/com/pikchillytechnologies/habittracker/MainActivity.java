@@ -17,9 +17,9 @@ public class MainActivity extends AppCompatActivity {
         MyHabitsDBHelper habitDbHelper = new MyHabitsDBHelper(this);
 
         // Insert Data in tables
-        habitDbHelper.insertHabit("28/09/2018", Contract.HabitEntry.HABIT_CODING, "Android with Firebase");
-        habitDbHelper.insertHabit("01/10/2018", Contract.HabitEntry.HABIT_WALK, "Morning Walk 2 km");
-        habitDbHelper.insertHabit("02/10/2018", Contract.HabitEntry.HABIT_GYM, "Exercise for 2 hours");
+        habitDbHelper.insertHabit("28/09/2018",2, Contract.HabitEntry.HABIT_CODING, "Android with Firebase");
+        habitDbHelper.insertHabit("01/10/2018",1, Contract.HabitEntry.HABIT_WALK, "Morning Walk 2 km");
+        habitDbHelper.insertHabit("02/10/2018",2, Contract.HabitEntry.HABIT_GYM, "Exercise for 2 hours");
 
         Cursor cursor = habitDbHelper.readHabits();
         while (cursor.moveToNext()) {

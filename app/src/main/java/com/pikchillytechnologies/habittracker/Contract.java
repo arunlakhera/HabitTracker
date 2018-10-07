@@ -15,6 +15,7 @@ public class Contract {
         // Table Columns
         public final static String _ID = BaseColumns._ID;
         public final static String COLUMN_DATE = "date";
+        public final static String COLUMN_DURATION = "duration";
         public final static String COLUMN_HABIT = "habit";
         public final static String COLUMN_COMMENT = "comment";
 
